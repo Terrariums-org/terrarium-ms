@@ -13,12 +13,10 @@ import { TerrariumsController } from './controllers/terrariums.controller';
 import { TerrariumsService } from '../application/services/terrariums.service';
 import { TerrariumsProfileRepositoryImp } from './ports/mysql/terrariumsProfileRepositoryImp';
 import { DataSource } from 'typeorm';
-import { RabbitMQModule } from 'src/shared/transports/rabbitMq.module';
 import { BrokerModule } from 'src/broker/infraestructure/broker.module';
 
 @Module({
   imports: [
-    // RabbitMQModule,
     BrokerModule,
     TypeOrmModule.forFeature([
       TerrariumsProfile,
