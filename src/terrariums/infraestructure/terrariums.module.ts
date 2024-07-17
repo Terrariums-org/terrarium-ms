@@ -18,7 +18,7 @@ import { BrokerModule } from 'src/broker/infraestructure/broker.module';
 
 @Module({
   imports: [
-    RabbitMQModule,
+    // RabbitMQModule,
     BrokerModule,
     TypeOrmModule.forFeature([
       TerrariumsProfile,
